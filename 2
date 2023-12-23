@@ -24,9 +24,6 @@ contract Test {
 
         uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
-
-        uint yPost = t.balanceOf(_to);
-
         assert(yPost == yPre + _amt);
     }
 }
