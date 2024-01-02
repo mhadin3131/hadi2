@@ -8,11 +8,7 @@ interface Token {
 contract TokenCorrect is Token {
     constructor(address _a, uint _b) {
         balance[_a] = _b;
-    }
-    
-        return balance[_a];
-}
-
+  
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
         require(_to != address(this));
